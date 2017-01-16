@@ -1,0 +1,122 @@
+@font-face {
+
+    font-family: 'GoodDog';
+    src: url('fontfacekit/GoodDog/GoodDog-webfont.eot');
+    src: url('fontfacekit/GoodDog/GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fontfacekit/GoodDog/GoodDog-webfont.woff') format('woff'),
+         url('fontfacekit/GoodDog/GoodDog-webfont.ttf') format('truetype'),
+         url('fontfacekit/GoodDog/GoodDog-webfont.svg#oodDog') format('svg');
+
+}
+
+html, body, aside
+{
+	height: 100%;
+}
+
+body
+{
+	background-image: url("img/background.jpg");
+	background-position: bottom center;
+	background-attachment: fixed;
+	margin: 0px;
+}
+
+h1
+{
+	font-family: "GoodDog";
+	font-size: 5em;
+	margin: 0px;
+}
+
+.sous_titre
+{
+	font-size: 2em;	
+	font-family: arial;
+	font-style: italic;
+
+}
+
+#photo_cv
+{
+	box-shadow: 10px 10px 10px black;
+	border: 2px black solid;
+	border-radius: 30px;
+
+}
+
+#bloc_page
+{
+	display: flex;
+	height: 100%;
+}
+
+#lisere
+{
+	flex: none;
+	background-image: url("img/carotte.png");
+	background-repeat: no-repeat;
+	min-width: 150px;
+	border-right: 3px green solid;
+	box-shadow: 10px 0px 30px black;
+}
+
+#bloc_section
+{
+	flex: auto;
+	padding: 0 30px;
+}
+
+#entete
+{
+	display: flex;
+	margin-top: 10px;
+}
+
+#entete_texte
+{
+	flex: auto;
+	text-align: center;
+}
+
+#entete_photo
+{
+	flex: none;
+	padding: 10px;
+}
+
+.bloc_contenu
+{
+	display: flex;
+	margin-top: 50px;
+}
+.bloc_element
+{
+	flex: 1;
+	border-radius: 40px;
+	border: 2px black solid;
+	box-shadow: 0px 0px 10px black;
+	background-color: #37A745;
+	margin: 10px;
+	font-family: arial;	
+}
+
+.bloc_element h2
+{
+	text-align: center;
+	text-shadow: 0px 0px 1px black;
+	font-weight: bold;
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1024px)
+{
+	aside
+	{
+		visibility: collapse;
+	}
+	.bloc_contenu
+	{
+		flex-direction: column;
+	}
+}
